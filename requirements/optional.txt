@@ -1,0 +1,4 @@
+basemap
+geos
+pyproj
+tensorflow

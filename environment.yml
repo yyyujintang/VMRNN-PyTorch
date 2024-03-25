@@ -1,0 +1,22 @@
+name: VMRNN
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - numpy
+  - hickle
+  - pip
+  - python<=3.10.8
+  - pytorch<=1.13.1
+  - xarray==0.19.0
+  - pip:
+    - decord
+    - fvcore
+    - lpips
+    - nni
+    - pandas
+    - scikit-image<=0.19.3
+    - timm<=0.6.11
+    - tqdm
+prefix: /opt/anaconda3/envs/VMRNN
