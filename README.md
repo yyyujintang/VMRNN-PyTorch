@@ -1,6 +1,6 @@
 # VMRNN: Integrating Vision Mamba and LSTM for Efficient and Accurate Spatiotemporal Forecasting
 
-Official repository for VMRNN: Integrating Vision Mamba and LSTM for Efficient and Accurate Spatiotemporal Forecasting. 
+Official repository for VMRNN: Integrating Vision Mamba and LSTM for Efficient and Accurate Spatiotemporal Forecasting. [Paper Link](https://arxiv.org/abs/2403.16536)
 
 ## Overview
 
@@ -62,4 +62,19 @@ bash scripts/kth/ddp/kth_mamba_2gpu.sh # ddp
 cd Moving_MNIST_VMRNN
 bash scripts/mm/train_mm_mamba.sh # train 
 bash scripts/mm/test_mm_mamba.sh # test our pretrained model
+```
+
+## Citation
+
+If you find this repository useful, please consider citing our paper:
+
+```python
+@misc{tang2024vmrnn,
+      title={VMRNN: Integrating Vision Mamba and LSTM for Efficient and Accurate Spatiotemporal Forecasting}, 
+      author={Yujin Tang and Peijie Dong and Zhenheng Tang and Xiaowen Chu and Junwei Liang},
+      year={2024},
+      eprint={2403.16536},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ```
