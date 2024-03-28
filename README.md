@@ -9,12 +9,9 @@ We propose the VMRNN cell, a new recurrent unit that integrates the strengths of
 ![Example Image](figures/VMRNN_Cell.png)
 ![Example Image](figures/VMRNN.png)
 
-
-
 ## Introduction
 
 Combining CNNs or ViTs, with RNNs for spatiotemporal forecasting, has yielded unparalleled results in predicting temporal and spatial dynamics. However, modeling extensive global information remains a formidable challenge; CNNs are limited by their narrow receptive fields, and ViTs struggle with the intensive computational demands of their attention mechanisms. The emergence of recent Mamba-based architectures has been met with enthusiasm for their exceptional long-sequence modeling capabilities, surpassing established vision models in efficiency, accuracy, and computational footprint, which motivates us to develop an innovative architecture tailored for spatiotemporal forecasting. In this paper, we propose the VMRNN cell, a new recurrent unit that integrates the strengths of Vision Mamba blocks with LSTM. We construct a network centered on VMRNN cells to tackle spatiotemporal prediction tasks effectively. Our extensive evaluations show that our proposed approach secures competitive results on a variety of pivot benchmarks while maintaining a smaller model size.
-
 
 ## Installation
 
@@ -29,8 +26,8 @@ pip install causal_conv1d==1.0.0
 pip install mamba_ssm==1.0.1
 ```
 
-
 ## Overview
+
 - `data/:` contains KTH/TaxiBJ dataset. Download (tools/prepare_data).
 - `openstl/methods/VMRNN.py:` contains defined training method of VMRNN_D and VMRNN-B.
 - `openstl/models/VMRNN_model.py:` contains the model VMRNN-D and VMRNN-B.
@@ -38,7 +35,6 @@ pip install mamba_ssm==1.0.1
 - `configs` contains training configs for KTH/TaxiBJ/Moving MNIST.
 - `Moving_MNIST_VMRNN:` contains the code base for Moving MNIST.
 - `Moving_MNIST_VMRNN/data:` contains Moving MNIST dataset: train-images-idx3-ubyte.gz and mnist_test_seq.npy. Download (tools/prepare_data).
-
 
 ## Train
 
@@ -63,6 +59,10 @@ cd Moving_MNIST_VMRNN
 bash scripts/mm/train_mm_mamba.sh # train 
 bash scripts/mm/test_mm_mamba.sh # test our pretrained model
 ```
+
+## Acknowledgments
+
+Our code is based on [OpenSTL](https://github.com/chengtan9907/OpenSTL) and [SwinLSTM](https://github.com/SongTang-x/SwinLSTM). We sincerely appreciate for their contributions.
 
 ## Citation
 
