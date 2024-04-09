@@ -2,6 +2,8 @@
 
 Official repository for VMRNN: Integrating Vision Mamba and LSTM for Efficient and Accurate Spatiotemporal Forecasting. [Paper Link](https://arxiv.org/abs/2403.16536)
 
+*2024.04*: &nbsp;🎉🎉 VMRNN was accepted by CVPR24 Precognition Workshop!
+
 ## Overview
 
 We propose the VMRNN cell, a new recurrent unit that integrates the strengths of Vision Mamba blocks with LSTM. Our extensive evaluations show that our proposed approach secures competitive results on a variety of pivot benchmarks while maintaining a smaller model size.
